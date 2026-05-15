@@ -126,6 +126,18 @@ hr {
 	font-size: 18px;
 	color: #666;
 }
+
+.logo img{
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
@@ -155,22 +167,21 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 /* Header Section */
 .intro {
-	display: table;
-	width: 100%;
-	padding: 0;
-	background: url(../img/intro-bg.jpg) top center no-repeat;
-	background-color: #e5e5e5;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  background: url(../img/services/hero.png) center center no-repeat;
+  background-color: #e5e5e5;
+  background-size: cover;
 }
 .intro .overlay {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,70ad47+100&0.6+0,0.4+100 */
-	background: -moz-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(112,173,71,0.4) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', endColorstr='#6670ad47', GradientType=0 ); /* IE6-9 */
+  min-height: 120vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.35) 0%,
+    rgba(112,173,71,0.25) 100%
+  );
 }
 .intro .fa {
 	font-size: 94px;
@@ -200,9 +211,48 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99000000', e
 header .intro-text {
 	padding-top: 320px;
 	padding-bottom: 200px;
-	text-align: center;
+	padding-left: 60px;
+	text-align: left;
 }
+
+.intro h1{
+  max-width: 600px;
+  line-height: 1;
+}
+
+/* efect to the slogan */
+
+.magic-title span,
+.magic-subtitle span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(35px) scale(0.9);
+  filter: blur(10px);
+  animation: magicReveal 1.2s ease forwards;
+}
+
+.magic-title span:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.magic-title span:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.magic-subtitle span {
+  animation-delay: 1.7s;
+}
+
+@keyframes magicReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 /* About Section */
+
 #about {
 	padding: 120px 0 80px 0;
 	background: #f6f6f6;
