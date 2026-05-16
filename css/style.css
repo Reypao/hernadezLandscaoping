@@ -583,3 +583,11 @@ color: #777;
 #footer a:hover {
 	color: #ccc;
 }
+
+@media (max-width: 768px){
+
+  .intro{
+    background-position: 68% center;
+  }
+
+}
