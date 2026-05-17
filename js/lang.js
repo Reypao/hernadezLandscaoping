@@ -8,7 +8,7 @@ const translations = {
 
     hero_title: "Beautiful Outdoor,",
     hero_text: "Every season",
-    hero_buttom: "More Info",
+    hero_button: "More Info",
 
     service_title_1: "Lawn Care",
     service_text_1: "We keep your lawn healthy, vibrant, and beautifully maintained year-round with professional mowing, edging, fertilization, and seasonal care services.",
@@ -35,7 +35,7 @@ const translations = {
 
     hero_title: "Hermoso Jardin,",
     hero_text: "en cada estacion",
-    hero_buttom: "Mas Informacion",
+    hero_button: "Mas Informacion",
 
     service_title_1: "Cuidado del Césped",
     service_text_1: "Mantenemos su césped saludable, verde y perfectamente cuidado durante todo el año con corte profesional, fertilización y mantenimiento estacional.",
