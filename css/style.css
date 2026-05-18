@@ -128,15 +128,16 @@ hr {
 }
 
 .logo img{
-  height: 80px;
+  height: 90px;
   width: auto;
   display: block;
 }
 
 .logo{
   display: flex;
-  align-items: center;
+  align-items: start;
 }
+
 
 .btn-custom {
 	text-transform: uppercase;
@@ -249,6 +250,13 @@ header .intro-text {
     transform: translateY(0) scale(1);
     filter: blur(0);
   }
+}
+
+.navbar-nav > li > a{
+  font-weight: bold !important;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 /* About Section */
@@ -540,54 +548,88 @@ color: #777;
 #contact .contact-item {
 	margin: 20px 0 40px 0;
 }
-/* Footer Section*/
-#footer {
-	background: #333;
-	padding: 30px 0 20px;
-}
-#footer h3 {
-	color: #1e7a46;
-	font-weight: 400;
-	font-size: 18px;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-}
-#footer .social {
-	margin: 10px 0 50px 0;
-}
-#footer .social ul li {
-	display: inline-block;
-	margin: 0 20px;
-}
-#footer .social i.fa {
-	font-size: 22px;
-	width: 40px;
-	height: 40px;
-	padding: 10px;
-	background: #444;
-	color: #6aaf08;
-	border-radius: 50%;
-	transition: all 0.3s;
-}
-#footer .social i.fa:hover {
-	background: #6aaf08;
-	color: #fff;
-}
-#footer p {
-	color: #666;
-	font-size: 15px;
-}
-#footer a {
-	color: #888;
-}
-#footer a:hover {
-	color: #ccc;
+
+/* FOOTER */
+#footer{
+  background: #075415;
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
 }
 
+/* WRAPPER */
+.footer-wrapper{
+  width: 100%;
+  text-align: center;
+}
+
+/* LOGO */
+.footer-logo{
+  margin-bottom: 25px;
+}
+
+.footer-logo img{
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+
+  filter:
+    drop-shadow(0 0 10px rgba(255,255,255,0.8))
+    drop-shadow(0 0 20px rgba(255,255,255,0.4));
+}
+
+/* SOCIAL */
+.social ul{
+  padding: 0;
+  margin: 20px 0;
+}
+
+.social li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social li a{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+
+  color: #7ed321;
+  font-size: 24px;
+
+  transition: all 0.3s ease;
+}
+
+.social li a:hover{
+  background: rgba(255,255,255,0.15);
+  transform: translateY(-4px);
+}
+
+/* COPYRIGHT */
+#footer p{
+  color: rgba(255,255,255,0.6);
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* MOBILE */
 @media (max-width: 768px){
 
-  .intro{
-    background-position: 68% center;
+  html,
+  body{
+    overflow-x: hidden;
   }
 
+  .footer-logo img{
+    width: 150px;
+  }
+
+  #footer p{
+    font-size: 14px;
+    padding: 0 15px;
+  }
 }
